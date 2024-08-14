@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --color-mustard: #E6C744;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-silver: #C2C8DA;
+    --color-silver-light: #F4F6F5;
+    --font-Poppins: "Poppins", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-Poppins);
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* Comienzo del header */
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+.logo-escudo{
+    width: 15px;
+    height: 15px;
+    margin-right: 0.3rem;
+}
+
+.Fashion{
+    font-weight: 900;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.nav-bar-list{
+    display: flex;
+    gap: 2rem;
+    text-transform: uppercase;
+}
+.boton{
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 0.5rem;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.boton:hover{
+    background-color: var(--color-silver-light);
+    color: var(--color-black);
+}
+
+/* Fin del header */
+/* Comienzo del hero-section-1 */
+.hero-section-1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--color-silver-light);
+    border-radius: 59px;
+}
+
+.info{
+    grid-column: 1/3;
+    padding: 1rem;
+}
+
+.title-info{
+    font-weight: 900;
+    font-style: normal;
+    font-size: 50px;
+    margin: 1rem;
+}
+
+.white{
+    background-color: var(--color-white);
+    width: 220px;
+    display: block;
+    transform: skew(10deg,10deg)
+    
+}
+
+.mustard{
+    background-color: var(--color-mustard);
+    width: 220px;
+    display: block;
+    transform: skew(-10deg,-10deg)
+}
+
+.paragraph{
+    font-size: 15px;
+    margin: 1rem;
+}
+
+.btn-shop-now{
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-left: 1.5rem;
+    width: 100px;
+    height: 40px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-shop-now:hover{
+    cursor: pointer;
+    background-color: var(--color-mustard);
+    color: var(--color-black);
+}
+
+.women-dancing-photo{
+    width: 500px;
+    height: 500px;
+}
+
+/* Comienzo de la section brands */
+.brands{
+    background-color: var(--color-mustard);
+}
+
+.flex-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 10px;
+    mix-blend-mode: multiply;  /* mix-blend-mode: multiply; hace que el blanco en la imagen se vuelva transparente cuando se combina con el fondo oscuro. */
+}
+
+.flex-img > img {
+    max-width: 100%;
+    height: auto;
+    flex: 1 1 1; /* Ajusta el tamaño mínimo de los elementos */
+    object-fit: contain; /* Mantén la proporción de las imágenes */
+}
+
+/* Comienzo de la section new arrivals */
+.new-arrivals{
+    margin: 1rem;
+}
+
+.title-new-arrivals{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: normal;
+    margin-left: 0.5rem;
+}
+.flex-cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2.5rem;
+}
+
+.card{
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.img-cards{
+    width: 300px;
+    height: 300px;
+}
+/* comienzo del banner */
+.banner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: #F9DF56;
+}
+
+.banner > img {
+    width: 500px;
+    height: 500px;
+    margin-left: 15rem;
+}
+
+.info-banner{
+    padding: 2rem;
+}
+
+.title-banner{
+    font-weight: 900;
+    font-style: normal;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.title-banner-span{
+    background-color: var(--color-white);
+    width: 220px;
+    display: block;
+    transform: skew(5deg,-1deg)
+}
+
+.paragragh-banner1{
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.paragragh-banner2{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+}
+.pararagh-span{
+    font-weight: bold;
+}
+
+.btn-shop-now-1{
+    margin-top: 1rem;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-shop-now-1:hover{
+    cursor: pointer;
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+/* Fin de la section banner */
+/* Comienzo de la section young's favourite */
+.youngs-favourite{
+    margin: 1rem;
+}
+
+.title-youngs-favorite{
+    text-transform: capitalize;
+}
+
+.cards-youngs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10rem;
+    margin-top: 3rem;
+}
+
+.cards-youngs-subtitle > img{
+    width: 500px;
+}
+/* Fin de la section young's favourite */
+/* Comienzo de la section community */
+.community{
+    height: 600px;
+    background-color: var(--color-mustard);
+    padding: 6rem;
+}
+
+.community-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white);
+    gap: 1rem;
+}
+
+.community-title{
+    text-align: center;
+    font-size: 55px;
+}
+
+.community-subtitle{
+    font-weight: normal;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: var(--color-white);
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.search-container input[type="search"] {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.search-container button {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border: none;
+    padding: 10px 20px;
+    margin-left: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-container button:hover {
+    color: var(--color-black);
+    background-color: var(--color-silver);
+
+}
+
+/* Creacion del footer */
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 500px;
+    padding: 2rem;
+    color: var(--color-white);
+    background-color: var(--color-black);
+}
+
+.footer-1,.company-footer,.quick-link-footer,.legal-footer{
+    margin-top: 5rem;
+}
+
+.footer-1{
+    padding: 1rem;
+}
+
+.title-footer-1{
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.paragragh-footer-1{
+    margin-bottom: 2.3rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.social-icons{
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons > i, .link-social-mail{
+    padding: 1rem;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    color: var(--color-black);
+    background-color: var(--color-mustard);
+}
